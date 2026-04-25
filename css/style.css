@@ -1441,3 +1441,129 @@ mark {
 }
 
 
+
+
+/* ===== UNIFIED SECTION STYLE ===== */
+
+.home-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px 60px;
+}
+
+/* CARD STYLE FOR ALL SECTIONS */
+.section-card {
+  background: rgba(255,255,255,0.85);
+  border-radius: 20px;
+  padding: 40px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+/* HOVER LIFT */
+.section-card:hover {
+  transform: translateY(-5px);
+}
+
+/* GRADIENT CTA */
+.section-card.gradient {
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: white;
+  text-align: center;
+}
+
+.cta-text {
+  margin: 10px 0 20px;
+  opacity: 0.9;
+}
+
+/* ===== ACTIVITY ===== */
+
+.activity-box.enhanced {
+  margin-top: 15px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #f1f5f9;
+  padding: 10px 16px;
+  border-radius: 25px;
+}
+
+/* STATUS DOT */
+.status-dot {
+  width: 10px;
+  height: 10px;
+  background: #10b981;
+  border-radius: 50%;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  50% { transform: scale(1.5); opacity: 0.5; }
+}
+
+/* ===== PROCESS ===== */
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.process-card {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  transition: 0.3s;
+  border: 1px solid #e5e7eb;
+}
+
+.process-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+/* NUMBER STYLE */
+.process-number {
+  font-size: 18px;
+  font-weight: bold;
+  color: #4f46e5;
+  margin-bottom: 8px;
+}
+
+/* ===== STATS ===== */
+
+.stats-grid {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.stat h2 {
+  font-size: 32px;
+  color: #4f46e5;
+}
+
+.stat {
+  transition: 0.3s;
+}
+
+.stat:hover {
+  transform: scale(1.05);
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+  .home-sections {
+    padding: 20px;
+  }
+
+  .stats-grid {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

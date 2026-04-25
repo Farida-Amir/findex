@@ -146,85 +146,95 @@
 </section>
 
 
-<!-- LIVE ACTIVITY -->
-<section class="activity reveal">
-  <h2>Live Platform Activity</h2>
+<div class="home-sections">
 
-  <div class="activity-box">
-    <strong>Status:</strong> 
-    <span id="activityText">Loading...</span>
-  </div>
-</section>
+  <!-- LIVE ACTIVITY -->
+  <section class="activity reveal section-card">
+    <h2>Live Platform Activity</h2>
 
-
-<!-- CTA -->
-<section class="cta reveal">
-  <h2>Start Your Recovery Journey Today</h2>
-  <a href="<?= isset($_SESSION['user_id']) ? 'dashboard.php' : 'register.php'; ?>" class="btn">
-    <?= isset($_SESSION['user_id']) ? 'Continue to Dashboard' : 'Create Account'; ?>
-  </a>
-</section>
+    <div class="activity-box enhanced">
+      <span class="status-dot"></span>
+      <strong>Status:</strong> 
+      <span id="activityText">Loading...</span>
+    </div>
+  </section>
 
 
-<!-- PROCESS -->
-<section class="process reveal">
+  <!-- CTA -->
+  <section class="cta reveal section-card gradient">
+    <h2>Start Your Recovery Journey Today</h2>
 
-  <h2 class="section-title">How It Works</h2>
+    <p class="cta-text">
+      Join a structured platform designed for efficient reporting and secure communication.
+    </p>
 
-  <div class="process-grid">
+    <a href="<?= isset($_SESSION['user_id']) ? 'dashboard.php' : 'register.php'; ?>" class="btn">
+      <?= isset($_SESSION['user_id']) ? 'Continue to Dashboard' : 'Create Account'; ?>
+    </a>
+  </section>
 
-    <div class="process-card">
-      <div class="process-number">01</div>
-      <h3>Submit Report</h3>
-      <p>Provide structured details about the item.</p>
+
+  <!-- PROCESS -->
+  <section class="process reveal section-card">
+
+    <h2 class="section-title">How It Works</h2>
+
+    <div class="process-grid">
+
+      <div class="process-card">
+        <div class="process-number">01</div>
+        <h3>Submit Report</h3>
+        <p>Provide structured details about the item.</p>
+      </div>
+
+      <div class="process-card">
+        <div class="process-number">02</div>
+        <h3>System Analysis</h3>
+        <p>Platform identifies potential matches.</p>
+      </div>
+
+      <div class="process-card">
+        <div class="process-number">03</div>
+        <h3>Communication</h3>
+        <p>Users connect directly via chat.</p>
+      </div>
+
+      <div class="process-card">
+        <div class="process-number">04</div>
+        <h3>Recovery</h3>
+        <p>Items are verified and returned.</p>
+      </div>
+
     </div>
 
-    <div class="process-card">
-      <div class="process-number">02</div>
-      <h3>System Analysis</h3>
-      <p>Platform identifies potential matches.</p>
+  </section>
+
+
+  <!-- STATS -->
+  <section class="stats reveal section-card">
+
+    <div class="stats-grid">
+
+      <div class="stat">
+        <h2>120+</h2>
+        <p>Reports Submitted</p>
+      </div>
+
+      <div class="stat">
+        <h2>85%</h2>
+        <p>Successful Matches</p>
+      </div>
+
+      <div class="stat">
+        <h2>300+</h2>
+        <p>Active Users</p>
+      </div>
+
     </div>
 
-    <div class="process-card">
-      <div class="process-number">03</div>
-      <h3>Communication</h3>
-      <p>Users connect directly via chat.</p>
-    </div>
+  </section>
 
-    <div class="process-card">
-      <div class="process-number">04</div>
-      <h3>Recovery</h3>
-      <p>Items are verified and returned.</p>
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- STATS -->
-<section class="stats reveal">
-
-  <div class="stats-grid">
-
-    <div class="stat">
-      <h2>120+</h2>
-      <p>Reports Submitted</p>
-    </div>
-
-    <div class="stat">
-      <h2>85%</h2>
-      <p>Successful Matches</p>
-    </div>
-
-    <div class="stat">
-      <h2>300+</h2>
-      <p>Active Users</p>
-    </div>
-
-  </div>
-
-</section>
+</div>
 
 
 <!-- FINAL -->
