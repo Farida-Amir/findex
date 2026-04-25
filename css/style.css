@@ -1542,6 +1542,13 @@ mark {
   text-align: center;
 }
 
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
 .stat h3 {
   font-size: 18px;
   margin-bottom: 5px;
@@ -1549,7 +1556,77 @@ mark {
 }
 
 .stat {
-  transition: 0.3s;
+  background: linear-gradient(145deg, #ffffff, #f1f5f9);
+  border-radius: 18px;
+  padding: 25px;
+  text-align: center;
+
+  transition: all 0.35s ease;
+  cursor: pointer;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* TOP COLOR LINE */
+.stat::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+}
+
+/* COLORS */
+.stat:nth-child(1)::before {
+  background: linear-gradient(90deg, #4f46e5, #3b82f6);
+}
+.stat:nth-child(2)::before {
+  background: linear-gradient(90deg, #10b981, #059669);
+}
+.stat:nth-child(3)::before {
+  background: linear-gradient(90deg, #06b6d4, #3b82f6);
+}
+
+/* FLOAT ANIMATION */
+.stat {
+  animation: floatStat 6s ease-in-out infinite;
+}
+
+@keyframes floatStat {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
+
+/* HOVER EFFECT */
+.stat:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* TEXT */
+.stat h3 {
+  color: #4f46e5;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.stat:nth-child(2) h3 {
+  color: #059669;
+}
+
+.stat:nth-child(3) h3 {
+  color: #0891b2;
+}
+
+.stat p {
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 .stat:hover {
