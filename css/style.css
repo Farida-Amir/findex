@@ -1305,3 +1305,85 @@ mark {
 .card:hover {
   box-shadow: 0 25px 50px rgba(0,0,0,0.15);
 }
+
+
+/* ===== PREMIUM ACTIVITY SECTION ===== */
+
+.premium-activity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.activity-card {
+  background: linear-gradient(135deg, #ffffff, #eef2ff);
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  max-width: 450px;
+  width: 100%;
+}
+
+/* ENHANCED BOX */
+.activity-box.enhanced {
+  margin-top: 15px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #f8fafc;
+  padding: 12px 18px;
+  border-radius: 30px;
+  font-size: 14px;
+}
+
+/* STATUS DOT */
+.status-dot {
+  width: 10px;
+  height: 10px;
+  background: #10b981;
+  border-radius: 50%;
+  animation: pulse 1.5s infinite;
+}
+
+/* PULSE ANIMATION */
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.5); opacity: 0.5; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* ===== PREMIUM CTA ===== */
+
+.premium-cta {
+  display: flex;
+  justify-content: center;
+}
+
+.cta-card {
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  padding: 45px;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 25px 50px rgba(79,70,229,0.3);
+}
+
+/* TEXT */
+.cta-card p {
+  margin: 15px 0 25px;
+  opacity: 0.9;
+}
+
+/* BUTTON INSIDE CTA */
+.cta-card .btn {
+  background: white;
+  color: #4f46e5;
+  font-weight: 600;
+}
+
+.cta-card .btn:hover {
+  background: #eef2ff;
+}
