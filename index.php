@@ -1,12 +1,13 @@
 <?php include("includes/header.php"); ?>
 
+<!-- SLIDER -->
 <section class="slider">
 
   <div class="slide active">
     <img src="/Findex/images/slide1.jpg">
 
     <div class="slide-overlay">
-      <div class="slide-content">
+      <div class="slide-content glass-box">
         <h1>Recover Lost Items Faster</h1>
         <p>Structured reports and smart matching system</p>
 
@@ -19,9 +20,8 @@
 
   <div class="slide">
     <img src="/Findex/images/slide2.jpg">
-
     <div class="slide-overlay">
-      <div class="slide-content">
+      <div class="slide-content glass-box">
         <h1>Secure Communication</h1>
         <p>Connect directly with verified users</p>
       </div>
@@ -30,9 +30,8 @@
 
   <div class="slide">
     <img src="/Findex/images/slide3.jpg">
-
     <div class="slide-overlay">
-      <div class="slide-content">
+      <div class="slide-content glass-box">
         <h1>Organized Tracking</h1>
         <p>Everything managed in one platform</p>
       </div>
@@ -43,7 +42,7 @@
 
 
 <!-- HERO -->
-<section class="hero">
+<section class="hero reveal">
 
   <div class="hero-left">
     <h1 class="title">
@@ -55,11 +54,11 @@
       analyze potential matches, and communicate securely to recover valuables efficiently.
     </p>
 
-<div class="hero-buttons">
-  <a href="<?= isset($_SESSION['user_id']) ? 'dashboard.php' : 'register.php'; ?>" class="btn">
-    <?= isset($_SESSION['user_id']) ? 'Go to Dashboard' : 'Get Started'; ?>
-  </a>
-</div>
+    <div class="hero-buttons">
+      <a href="<?= isset($_SESSION['user_id']) ? 'dashboard.php' : 'register.php'; ?>" class="btn">
+        <?= isset($_SESSION['user_id']) ? 'Go to Dashboard' : 'Get Started'; ?>
+      </a>
+    </div>
   </div>
 
   <div class="hero-right">
@@ -70,8 +69,30 @@
 
 </section>
 
+
+<!-- NEW VALUE SECTION -->
+<section class="grid reveal">
+
+  <div class="card">
+    <h3>Centralized Reporting</h3>
+    <p>Submit and manage all lost and found items in one structured system.</p>
+  </div>
+
+  <div class="card">
+    <h3>Faster Recovery</h3>
+    <p>Reduce recovery time through smart organization and communication.</p>
+  </div>
+
+  <div class="card">
+    <h3>Secure Interaction</h3>
+    <p>Communicate safely with verified users inside the platform.</p>
+  </div>
+
+</section>
+
+
 <!-- HIGHLIGHT -->
-<section class="highlight">
+<section class="highlight reveal">
   <div class="highlight-card">
     <h2>All-in-One Recovery Platform</h2>
     <p>
@@ -81,49 +102,55 @@
   </div>
 </section>
 
+
 <!-- FEATURES -->
-<section class="grid">
+<section class="grid reveal">
 
   <div class="card">
     <h3>Smart Matching</h3>
-    <p>Identify potential matches between reports using structured data and filtering.</p>
+    <p>Identify potential matches between reports using structured data.</p>
   </div>
 
   <div class="card">
     <h3>Image Enhancement</h3>
-    <p>Improve visibility of items to increase recognition and identification accuracy.</p>
+    <p>Improve visibility of items for better identification.</p>
   </div>
 
   <div class="card">
     <h3>Real-Time Chat</h3>
-    <p>Communicate instantly with users to verify and coordinate item recovery.</p>
+    <p>Communicate instantly with users to coordinate recovery.</p>
   </div>
 
   <div class="card">
     <h3>Verified Shops</h3>
-    <p>Interact with trusted sources to increase reliability and security.</p>
+    <p>Interact with trusted sources to increase reliability.</p>
   </div>
 
 </section>
+
 
 <!-- LIVE ACTIVITY -->
-<section class="activity">
+<section class="activity reveal">
   <h2>Live Platform Activity</h2>
 
-  <div class="activity-box" id="activityBox">
-    A user is currently searching for a lost item...
+  <div class="activity-box">
+    <strong>Status:</strong> 
+    <span id="activityText">Loading...</span>
   </div>
 </section>
 
+
 <!-- CTA -->
-<section class="cta">
+<section class="cta reveal">
   <h2>Start Your Recovery Journey Today</h2>
   <a href="<?= isset($_SESSION['user_id']) ? 'dashboard.php' : 'register.php'; ?>" class="btn">
     <?= isset($_SESSION['user_id']) ? 'Continue to Dashboard' : 'Create Account'; ?>
   </a>
 </section>
 
-<section class="process">
+
+<!-- PROCESS -->
+<section class="process reveal">
 
   <h2 class="section-title">How It Works</h2>
 
@@ -132,25 +159,25 @@
     <div class="process-card">
       <div class="process-number">01</div>
       <h3>Submit Report</h3>
-      <p>Provide structured details about the item including description and category.</p>
+      <p>Provide structured details about the item.</p>
     </div>
 
     <div class="process-card">
       <div class="process-number">02</div>
       <h3>System Analysis</h3>
-      <p>The platform compares reports and identifies possible matches.</p>
+      <p>Platform identifies potential matches.</p>
     </div>
 
     <div class="process-card">
       <div class="process-number">03</div>
       <h3>Communication</h3>
-      <p>Users connect directly through private messaging.</p>
+      <p>Users connect directly via chat.</p>
     </div>
 
     <div class="process-card">
       <div class="process-number">04</div>
       <h3>Recovery</h3>
-      <p>Items are verified and returned through coordinated interaction.</p>
+      <p>Items are verified and returned.</p>
     </div>
 
   </div>
@@ -159,7 +186,7 @@
 
 
 <!-- STATS -->
-<section class="stats">
+<section class="stats reveal">
 
   <div class="stats-grid">
 
@@ -184,7 +211,7 @@
 
 
 <!-- FINAL -->
-<section class="final">
+<section class="final reveal">
 
   <div class="final-box">
     <h2>Built for Efficiency and Trust</h2>
@@ -202,3 +229,5 @@
 </section>
 
 <?php include("includes/footer.php"); ?>
+
+<script src="/Findex/js/home.js"></script>
