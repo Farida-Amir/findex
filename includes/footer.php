@@ -3,6 +3,6 @@
 <footer class="footer">
   <p>© 2026 Findex Platform</p>
 </footer>
-<script src="/Findex/js/app.js"></script>
+<script src="/Findex/js/home.js?v=2"></script>
 </body>
 </html>

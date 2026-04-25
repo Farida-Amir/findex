@@ -247,4 +247,4 @@
 
 <?php include("includes/footer.php"); ?>
 
-<script src="/Findex/js/home.js"></script>
+<script src="/Findex/js/home.js?v=2"></script>

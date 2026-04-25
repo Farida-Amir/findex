@@ -8,7 +8,7 @@ if (session_status() === PHP_SESSION_NONE) {
 <html>
 <head>
   <title>Findex</title>
-  <link rel="stylesheet" href="/Findex/css/style.css">
+<link rel="stylesheet" href="/Findex/css/style.css?v=2">
 </head>
 
 <body>
