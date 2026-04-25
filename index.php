@@ -70,22 +70,39 @@
 </section>
 
 
-<!-- NEW VALUE SECTION -->
 <section class="grid reveal">
 
-  <div class="card">
-    <h3>Centralized Reporting</h3>
-    <p>Submit and manage all lost and found items in one structured system.</p>
+  <div class="flip-card">
+    <div class="flip-inner">
+      <div class="flip-front blue">
+        <h3>Centralized Reporting</h3>
+      </div>
+      <div class="flip-back">
+        <p>Submit and manage all lost and found items in one structured system.</p>
+      </div>
+    </div>
   </div>
 
-  <div class="card">
-    <h3>Faster Recovery</h3>
-    <p>Reduce recovery time through smart organization and communication.</p>
+  <div class="flip-card">
+    <div class="flip-inner">
+      <div class="flip-front green">
+        <h3>Faster Recovery</h3>
+      </div>
+      <div class="flip-back">
+        <p>Reduce recovery time through smart organization and communication.</p>
+      </div>
+    </div>
   </div>
 
-  <div class="card">
-    <h3>Secure Interaction</h3>
-    <p>Communicate safely with verified users inside the platform.</p>
+  <div class="flip-card">
+    <div class="flip-inner">
+      <div class="flip-front blue">
+        <h3>Secure Interaction</h3>
+      </div>
+      <div class="flip-back">
+        <p>Communicate safely with verified users inside the platform.</p>
+      </div>
+    </div>
   </div>
 
 </section>

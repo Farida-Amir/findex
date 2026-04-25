@@ -862,3 +862,111 @@ mark {
   transform: translateY(-2px);
   box-shadow: 0 10px 20px rgba(79,70,229,0.3);
 }
+
+
+
+
+/* ===== FLIP CARDS ===== */
+
+.flip-card {
+  perspective: 1000px;
+  height: 180px;
+}
+
+.flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-front,
+.flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  padding: 25px;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* FRONT COLORS */
+.flip-front.blue {
+  background: linear-gradient(135deg, #2563eb, #4f46e5);
+  color: white;
+}
+
+.flip-front.green {
+  background: linear-gradient(135deg, #059669, #10b981);
+  color: white;
+}
+
+/* BACK */
+.flip-back {
+  background: white;
+  transform: rotateY(180deg);
+  color: #334155;
+}
+
+
+/* ===== ADVANCED CARD STYLE ===== */
+
+.card {
+  border-top: 4px solid transparent;
+}
+
+.card:nth-child(1) {
+  border-top-color: #4f46e5;
+}
+
+.card:nth-child(2) {
+  border-top-color: #10b981;
+}
+
+.card:nth-child(3) {
+  border-top-color: #3b82f6;
+}
+
+.card:nth-child(4) {
+  border-top-color: #06b6d4;
+}
+
+
+/* ===== PROFESSIONAL HOVER ===== */
+
+.card:hover,
+.process-card:hover,
+.stat:hover {
+  transform: translateY(-8px) scale(1.02);
+}
+
+
+/* ===== GLASS IMPROVEMENT ===== */
+
+.glass-box {
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+
+/* ===== BUTTON UPGRADE ===== */
+
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 25px rgba(79,70,229,0.25);
+}
