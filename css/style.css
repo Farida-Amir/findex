@@ -1542,8 +1542,9 @@ mark {
   text-align: center;
 }
 
-.stat h2 {
-  font-size: 32px;
+.stat h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
   color: #4f46e5;
 }
 

@@ -215,20 +215,20 @@
 
     <div class="stats-grid">
 
-      <div class="stat">
-        <h2>120+</h2>
-        <p>Reports Submitted</p>
-      </div>
+<div class="stat">
+  <h3>Structured System</h3>
+  <p>All data is organized to reduce confusion and improve tracking.</p>
+</div>
 
-      <div class="stat">
-        <h2>85%</h2>
-        <p>Successful Matches</p>
-      </div>
+<div class="stat">
+  <h3>Reliable Matching</h3>
+  <p>Advanced logic helps identify potential matches efficiently.</p>
+</div>
 
-      <div class="stat">
-        <h2>300+</h2>
-        <p>Active Users</p>
-      </div>
+<div class="stat">
+  <h3>Secure Interaction</h3>
+  <p>Communicate with users safely within the platform.</p>
+</div>
 
     </div>
 
