@@ -231,16 +231,25 @@
 <section class="final reveal">
 
   <div class="final-box">
-    <h2>Built for Efficiency and Trust</h2>
 
-    <p>
-      The platform is designed to reduce uncertainty by organizing information, 
-      enabling direct communication, and improving the recovery process.
-    </p>
+    <div class="final-text">
+      <h2>Built for Efficiency and Trust</h2>
 
-    <a href="<?= isset($_SESSION['user_id']) ? 'dashboard.php' : 'register.php'; ?>" class="btn">
-      Get Started
-    </a>
+      <p>
+        The platform is designed to reduce uncertainty by organizing information, 
+        enabling direct communication, and improving the recovery process.
+      </p>
+
+      <a href="<?= isset($_SESSION['user_id']) ? 'dashboard.php' : 'register.php'; ?>" class="btn">
+        Get Started
+      </a>
+    </div>
+
+    <!-- visual element (simple, clean) -->
+    <div class="final-visual">
+      <div class="visual-card"></div>
+    </div>
+
   </div>
 
 </section>
