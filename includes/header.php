@@ -34,8 +34,8 @@ if (session_status() === PHP_SESSION_NONE) {
 
     <?php else: ?>
 
-      <a href="/Findex/login.php">Login</a>
-      <a href="/Findex/register.php">Register</a>
+      <a href="/Findex/auth.php">Login</a>
+      <a href="/Findex/auth.php">Register</a>
 
     <?php endif; ?>
 
