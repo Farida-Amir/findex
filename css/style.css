@@ -2078,5 +2078,17 @@ mark {
 }
 
 .auth-wrapper {
-  margin-top: 40px;
+  width: 100%;
+  max-width: 500px;
+  margin: 80px auto; /* centers it properly under navbar */
+}
+
+
+
+
+.auth-container {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

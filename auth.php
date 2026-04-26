@@ -1,63 +1,86 @@
 <?php include("includes/header.php"); ?>
 
+<div class="auth-container">
+  <div class="auth-wrapper">
 
+    <div class="brand-logo">
+      <span class="logo-mark"></span>
+      <span class="logo-text">Findex</span>
+    </div>
 
+    <div class="tab-header">
+      <button class="tab-btn active" data-form="login"> Login</button>
+      <button class="tab-btn" data-form="register"> Sign up</button>
+    </div>
 
+    <!-- ✅ MOVED INSIDE auth-wrapper -->
+    <div class="forms-container">
 
-<div class="auth-wrapper">  <div class="brand-logo">
-    <span class="logo-mark"></span>
-    <span class="logo-text">Findex</span>
-  </div>  <div class="tab-header">
-    <button class="tab-btn active" data-form="login"> Login</button>
-    <button class="tab-btn" data-form="register"> Sign up</button>
-  </div>
+      <!-- LOGIN FORM -->
+      <form id="loginForm" class="auth-form active-form">
+        <h2>Welcome back</h2>
 
-  <div class="forms-container">
-    <!-- LOGIN FORM -->
-    <form id="loginForm" class="auth-form active-form">
-      <h2>Welcome back</h2>
-      <div class="input-group">
-        <i>📧</i>
-        <input type="email" name="email" id="loginEmail" placeholder="your@email.com" autocomplete="email" required>
-      </div>
-      <div class="input-group password-wrapper">
-        <i>🔒</i>
-        <input type="password" name="password" id="loginPassword" placeholder="Password" autocomplete="current-password" required>
-        <span class="toggle-password" data-target="loginPassword"></span>
-      </div>
-      <div id="loginError" class="error-msg"></div>
-      <button type="submit" class="btn-submit">Log in →</button>
-      <div class="footer-note">Don't have an account? <strong id="switchToRegister">Create account</strong></div>
-    </form>
+        <div class="input-group">
+          <i>📧</i>
+          <input type="email" name="email" id="loginEmail" placeholder="your@email.com" autocomplete="email" required>
+        </div>
 
-    <!-- REGISTER FORM -->
-    <form id="registerForm" class="auth-form">
-      <h2>Join the circle</h2>
-      <div class="input-group">
-        <i>👤</i>
-        <input type="text" name="name" id="regName" placeholder="Full name" autocomplete="name" required>
-      </div>
-      <div class="input-group">
-        <i>📧</i>
-        <input type="email" name="email" id="regEmail" placeholder="Email address" autocomplete="email" required>
-      </div>
-      <div class="input-group password-wrapper">
-        <i>🔒</i>
-        <input type="password" name="password" id="regPassword" placeholder="Password (min 6 chars)" autocomplete="new-password" required>
-        <span class="toggle-password" data-target="regPassword"></span>
-      </div>
-      <div class="input-group password-wrapper">
-        <i>✓</i>
-        <input type="password" id="confirmPassword" placeholder="Confirm password" autocomplete="off" required>
-        <span class="toggle-password" data-target="confirmPassword"></span>
-      </div>
-      <div id="registerError" class="error-msg"></div>
-      <div id="registerSuccess" class="success-msg"></div>
-      <button type="submit" class="btn-submit">Sign up →</button>
-      <div class="footer-note">Already have an account? <strong id="switchToLogin">Log in here</strong></div>
-    </form>
-  </div>
-</div>
+        <div class="input-group password-wrapper">
+          <i>🔒</i>
+          <input type="password" name="password" id="loginPassword" placeholder="Password" autocomplete="current-password" required>
+          <span class="toggle-password" data-target="loginPassword"></span>
+        </div>
+
+        <div id="loginError" class="error-msg"></div>
+
+        <button type="submit" class="btn-submit">Log in →</button>
+
+        <div class="footer-note">
+          Don't have an account? <strong id="switchToRegister">Create account</strong>
+        </div>
+      </form>
+
+      <!-- REGISTER FORM -->
+      <form id="registerForm" class="auth-form">
+        <h2>Join the circle</h2>
+
+        <div class="input-group">
+          <i>👤</i>
+          <input type="text" name="name" id="regName" placeholder="Full name" autocomplete="name" required>
+        </div>
+
+        <div class="input-group">
+          <i>📧</i>
+          <input type="email" name="email" id="regEmail" placeholder="Email address" autocomplete="email" required>
+        </div>
+
+        <div class="input-group password-wrapper">
+          <i>🔒</i>
+          <input type="password" name="password" id="regPassword" placeholder="Password (min 6 chars)" autocomplete="new-password" required>
+          <span class="toggle-password" data-target="regPassword"></span>
+        </div>
+
+        <div class="input-group password-wrapper">
+          <i>✓</i>
+          <input type="password" id="confirmPassword" placeholder="Confirm password" autocomplete="off" required>
+          <span class="toggle-password" data-target="confirmPassword"></span>
+        </div>
+
+        <div id="registerError" class="error-msg"></div>
+        <div id="registerSuccess" class="success-msg"></div>
+
+        <button type="submit" class="btn-submit">Sign up →</button>
+
+        <div class="footer-note">
+          Already have an account? <strong id="switchToLogin">Log in here</strong>
+        </div>
+      </form>
+
+    </div> <!-- forms-container -->
+
+  </div> <!-- auth-wrapper -->
+</div> <!-- auth-container -->
+
 
 <script>
   (function() {
@@ -195,10 +218,10 @@ loginForm.addEventListener('submit', async function(e) {
   const formData = new FormData(this);
 
   try {
-    const response = await fetch('/Findex/login.php', {
-      method: 'POST',
-      body: formData
-    });
+  const response = await fetch('login.php', {
+    method: 'POST',
+    body: formData
+});
 
     const text = await response.text();
 
@@ -229,10 +252,10 @@ registerForm.addEventListener('submit', async function(e) {
   const formData = new FormData(this);
 
   try {
-    const response = await fetch('/Findex/register.php', {
-      method: 'POST',
-      body: formData
-    });
+  const response = await fetch('register.php', {
+  method: 'POST',
+  body: formData
+});
 
     const text = await response.text();
 
