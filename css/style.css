@@ -229,7 +229,8 @@ section {
 
   padding: 60px 40px; /* REDUCED HEIGHT */
   border-radius: 20px;
-  margin: 30px;
+  margin: 30px auto;
+  max-width: 1100px;
 }
 
 /* INNER BOX */
@@ -437,7 +438,8 @@ section {
   height: 450px;
   overflow: hidden;
   border-radius: 20px;
-  margin: 40px;
+  margin: 20px auto;
+  max-width: 1100px;
 }
 
 /* SLIDE */
@@ -1357,7 +1359,9 @@ mark {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  padding: 40px 60px;
+  padding: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 /* CARD STYLE FOR ALL SECTIONS */
@@ -2049,7 +2053,7 @@ mark {
     }
 
 .auth-container {
-  min-height: calc(100vh - 100px);
+  min-height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2088,4 +2092,13 @@ mark {
 main {
   flex: 1;
   display: block;
+}
+
+
+.dashboard,
+.dashboard-content,
+.auth-container {
+  max-width: 1100px;
+  margin: 20px auto;
+  width: 100%;
 }
