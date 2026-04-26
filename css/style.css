@@ -429,29 +429,7 @@ section {
 
 
 /* AUTH */
-.auth-container {
-  height: 80vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.auth-card {
-  background: white;
-  padding: 30px;
-  border-radius: 15px;
-  width: 350px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-  text-align: center;
-}
-
-.auth-card input {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border-radius: 10px;
-  border: 1px solid #ddd;
-}
 
 /* MODERN SLIDER */
 .slider {
@@ -2070,7 +2048,7 @@ mark {
       to { transform: rotate(360deg); }
     }
 
-    .auth-container {
+.auth-container {
   min-height: calc(100vh - 80px);
   display: flex;
   justify-content: center;
@@ -2080,15 +2058,5 @@ mark {
 .auth-wrapper {
   width: 100%;
   max-width: 500px;
-  margin: 80px auto; /* centers it properly under navbar */
-}
-
-
-
-
-.auth-container {
-  min-height: calc(100vh - 80px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 80px auto;
 }
