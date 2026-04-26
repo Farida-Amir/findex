@@ -8,8 +8,11 @@ function loadUsers() {
     });
 }
 
-function selectUser(id) {
+function selectUser(id, name) {
   selectedUser = id;
+
+  document.getElementById("chatWith").innerText = name;
+
   loadMessages();
 }
 
