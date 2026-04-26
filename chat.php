@@ -36,7 +36,7 @@ include("includes/db.php");
     <div class="chat-layout enhanced-chat">
 
       <!-- USERS LIST -->
-      <div class="users-list glass">
+      <div class="users-list">
         <h3 class="chat-title">Contacts</h3>
         <div id="usersList"></div>
       </div>
@@ -45,7 +45,7 @@ include("includes/db.php");
       <div class="chat-area">
 
         <!-- HEADER -->
-        <div class="chat-header glass">
+        <div class="chat-header">
           <h3 id="chatWith">Select a conversation</h3>
         </div>
 
@@ -53,7 +53,7 @@ include("includes/db.php");
         <div id="messages" class="messages"></div>
 
         <!-- INPUT -->
-        <div class="chat-input glass">
+        <div class="chat-input">
           <input type="text" id="msg" placeholder="Write a message...">
           <button class="btn" onclick="sendMessage()">Send</button>
         </div>
