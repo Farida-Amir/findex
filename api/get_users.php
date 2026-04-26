@@ -13,8 +13,8 @@ while($row = $res->fetch_assoc()){
     $name = htmlspecialchars($row['name']);
 
     echo "
-    <div class='user' onclick='selectUser({$row['id']}, \"{$name}\")'>
-        <div class='user-card' data-name='{$name}'></div>
+    <div class='user' onclick='selectUser({$row['id']}, \"{$name}\", event)'>
+        <div class='user-card'>{$name}</div>
     </div>
     ";
 }

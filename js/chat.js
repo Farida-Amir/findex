@@ -8,10 +8,19 @@ function loadUsers() {
     });
 }
 
-function selectUser(id, name) {
+function selectUser(id, name, event) {
   selectedUser = id;
 
+  // Update header
   document.getElementById("chatWith").innerText = name;
+
+  // Remove active from all
+  document.querySelectorAll('.user').forEach(u => u.classList.remove('active'));
+
+  // Add active to clicked user
+  if (event) {
+    event.currentTarget.classList.add('active');
+  }
 
   loadMessages();
 }
