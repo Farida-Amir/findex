@@ -2083,3 +2083,9 @@ mark {
 .footer {
   margin-top: auto;
 }
+
+
+main {
+  flex: 1;
+  display: block;
+}
