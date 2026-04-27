@@ -2080,9 +2080,7 @@ mark {
   flex-direction: column;
 }
 
-.page-wrapper > *:not(.footer) {
-  flex-shrink: 0;
-}
+
 
 .footer {
   margin-top: auto;
