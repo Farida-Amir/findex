@@ -1,0 +1,118 @@
+/* ============================================
+   GLOBAL STYLES - Consistent across ALL pages
+   ============================================ */
+
+/* Base font size */
+html {
+    font-size: 15px;
+}
+
+/* Headings */
+h1 { font-size: 32px; font-weight: 700; }
+h2 { font-size: 26px; font-weight: 600; }
+h3 { font-size: 20px; font-weight: 600; }
+h4 { font-size: 18px; font-weight: 600; }
+
+/* Body text */
+body, p, li, a, span, div, label {
+    font-size: 15px;
+}
+
+/* Form elements */
+input, select, textarea, button {
+    font-size: 14px;
+}
+
+/* Utility classes */
+.text-xs { font-size: 11px; }
+.text-sm { font-size: 13px; }
+.text-base { font-size: 15px; }
+.text-lg { font-size: 17px; }
+.text-xl { font-size: 19px; }
+.text-2xl { font-size: 22px; }
+.text-3xl { font-size: 26px; }
+.text-4xl { font-size: 32px; }
+
+/* Buttons */
+.btn, button, .btn-primary, .btn-secondary {
+    font-size: 14px;
+}
+
+/* Navigation */
+nav a, .nav-link {
+    font-size: 15px;
+}
+
+/* Mobile menu */
+.mobile-menu a {
+    font-size: 15px;
+}
+
+/* Footer */
+footer p, footer li, footer a, footer span {
+    font-size: 12px;
+}
+
+/* Stats numbers */
+.stat-number, .text-3xl.font-bold {
+    font-size: 32px !important;
+}
+
+/* Badges */
+.badge, .px-2.py-1.text-xs {
+    font-size: 11px !important;
+}
+
+/* Card titles */
+.card-title, .dashboard-card h2 {
+    font-size: 18px;
+}
+
+/* Hero section */
+.hero-title, .artistic-font {
+    font-size: 42px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    html { font-size: 14px; }
+    h1 { font-size: 28px; }
+    h2 { font-size: 24px; }
+    h3 { font-size: 18px; }
+    .hero-title, .artistic-font { font-size: 34px; }
+}
+
+@media (max-width: 480px) {
+    html { font-size: 13px; }
+    h1 { font-size: 24px; }
+    h2 { font-size: 20px; }
+    footer p, footer li, footer a { font-size: 11px; }
+}
+
+
+
+/* Prevent page jumping on anchor clicks */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+/* Fix for modal backgrounds */
+body.modal-open {
+    overflow: hidden;
+}
+
+/* Smooth transitions for all interactive elements */
+a, button, .btn, .card, .stat-card {
+    transition: all 0.2s ease;
+}
+
+/* Prevent layout shift on hover */
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Fix for sticky navbar causing jump */
+.sticky-nav-offset {
+    scroll-margin-top: 100px;
+}

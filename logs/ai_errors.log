@@ -1,0 +1,12 @@
+[07-Jun-2026 16:48:46 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\findex_trial\api\ai_process.php on line 37
+[07-Jun-2026 16:48:46 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in C:\xampp\htdocs\findex_trial\api\ai_process.php:508
+Stack trace:
+#0 C:\xampp\htdocs\findex_trial\api\ai_process.php(350): logAIActivity(2, 'enhance_image', 'front_id.jpeg', 'uploads/ai_outp...')
+#1 {main}
+  thrown in C:\xampp\htdocs\findex_trial\api\ai_process.php on line 508
+[07-Jun-2026 16:49:55 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\findex_trial\api\ai_process.php on line 37
+[07-Jun-2026 16:49:55 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in C:\xampp\htdocs\findex_trial\api\ai_process.php:508
+Stack trace:
+#0 C:\xampp\htdocs\findex_trial\api\ai_process.php(350): logAIActivity(2, 'enhance_image', 'luxor.jpg', 'uploads/ai_outp...')
+#1 {main}
+  thrown in C:\xampp\htdocs\findex_trial\api\ai_process.php on line 508
